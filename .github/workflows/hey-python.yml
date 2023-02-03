@@ -1,0 +1,14 @@
+name: hey-python
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: pip3 install -r hey-python/requirements.txt
+      - run: python3 -m black --check hey-python/src
