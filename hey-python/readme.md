@@ -46,7 +46,7 @@ You should be ready to run it now.
 Run it with:
 
 ```
-flash --app src/server.py run
+python3 -m flash --app src/server.py run
 ```
 
 It should be available in [localhost:5000](https://localhost:5000).
